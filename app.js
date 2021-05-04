@@ -14,19 +14,19 @@ startQuiz.addEventListener('click', () => {
     const first = prompt('whats your first name??');
     const last = prompt('whats your last name??');
     const name = first + last;
-    let right = 0;
+    let correct = 0;
     const answer1 = prompt('Do I like to skateboard?');
     if (checkForYes(answer1)){
-        right = right + 1;}
+        correct = correct + 1;}
     const answer2 = prompt('Have I been to Germany?');
     if (checkForYes(answer2)){
-        right = right + 1;}
+        correct = correct + 1;}
   
     const answer3 = prompt('Have I been to South Korea?');
     if (checkForYes(answer3)){
-        right = right + 1;
-  
+        correct = correct + 1;
+
     }
   
-    showResult.textContent = `Congratulations ${name}! You got ${right} out of 3!`;
+    showResult.textContent = `Congratulations ${name}! You got ${correct} out of 3!`;
 });
