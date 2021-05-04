@@ -1,4 +1,5 @@
 import { checkForYes } from './utills.js';
+import { checkForNo } from './utills.js';
 const startQuiz = document.getElementById ('start-quiz');
 const showResult = document.getElementById ('display-results');
 // initialize state
@@ -22,8 +23,8 @@ startQuiz.addEventListener('click', () => {
     if (checkForYes(answer2)){
         correct = correct + 1;}
   
-    const answer3 = prompt('Have I been to South Korea?');
-    if (checkForYes(answer3)){
+    const answer3 = prompt('Have I been to Canada?');
+    if (checkForNo(answer3)){
         correct = correct + 1;
 
     }
