@@ -26,8 +26,8 @@ startQuiz.addEventListener('click', () => {
     const answer3 = prompt('Have I been to Canada?');
     if (checkForNo(answer3)){
         correct = correct + 1;
-
     }
-  
-    showResult.textContent = `Congratulations ${name}! You got ${correct} out of 3!`;
+
+    const percent = (Math.floor((correct / 3) * 100));
+    showResult.textContent = `Congratulations ${name}! You got ${correct} out of 3! you got ${percent}%`;
 });
